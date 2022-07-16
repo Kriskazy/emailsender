@@ -34,7 +34,7 @@ let mailDetails = {
 // Send email function
 transporter.sendMail(mailDetails, function (err, data) {
   if (err) {
-    console.log("An Error Occured");
+    console.log("An Error Occured" + err);
   } else {
     console.log("Email sent successfully");
   }
